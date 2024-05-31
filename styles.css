@@ -1,0 +1,48 @@
+/* Style général du corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style du titre */
+h1 {
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+/* Style du plateau de jeu */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+/* Style de chaque cellule */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style des cellules lors du survol */
+.cell:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style du bouton de réinitialisation */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
